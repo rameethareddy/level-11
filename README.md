@@ -7,7 +7,7 @@ This is an Online Voting Application built using NodeJs and ExpressJS using the 
 
 ## Visit The Application
 
-The Application is Deployed on Render.com - [click here to visit](https://voting-app-uw8b.onrender.com/)
+The Application is Deployed on Render.com - [click here to visit](https://voting-web-app.onrender.com)
 
 This Application is build around Two Personas
 1. Election Admin - Create/Hosts Elections with Questions to Answer
@@ -21,9 +21,9 @@ This Application is build around Two Personas
 
 The Election Admin can Create number of Elections and Manage Voters in each election.
 
-Election Admin can launch Election and get a **public URL** which can be shared with voters.
-
 Election Admin can Create Multiple choice Questions with number of options but each question has to have atleast 2 options.
+
+Election Admin can launch Election and get a **public URL** which can be shared with voters.
 
 Election Admin can preview results of election as the election is Going on and Can End election at any time. Election Admin cannot change Questions and Options once the election is launched but can add or Delete Voters.
 
@@ -32,11 +32,13 @@ Election Admin can preview results of election as the election is Going on and C
 
 The Voter is Given a VoterID and password with which they can access and vote in an Election.
 
+Voter can either visit the PUBLIC URL given by Election Admin or directly login to Vote in assigned Election.
+
 Each Voter can only vote in an Election Once.
 
 Voter can see the results only after the Election Ends.
 
-Voter can either visit the PUBLIC URL given by Election Admin or directly login to Vote in assigned Election.
+
 
 
 ## Election Admin Pages - Screenshots
@@ -76,7 +78,7 @@ Application Software Requirements
     npm i
     npm i --save-dev
     ```
-3. We have to create DATABASE locally and Migrate.
+3. Create DATABASE locally and Migrate.
     ```
     npx sequelize-cli db:create
     npx sequelize-cli db:migrate
